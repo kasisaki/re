@@ -1,0 +1,40 @@
+<html>
+<header>
+    <title>Button Page</title>
+</header>
+
+<body>
+    <p>Hello world</p>
+
+    <p>
+        <button name="button">
+            Click me to have clicked the button
+        </button>
+    </p>
+
+    <h1>My First JavaScript</h1>
+
+    <button
+        type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()"
+    >
+        Click me to display Date and Time.
+    </button>
+
+    <p id="demo"></p>
+
+    <p
+        id="demo1"
+        onclick="myFunction()"
+    >
+        Click me to change my text color.
+    </p>
+
+    <script>
+        function myFunction() {
+    document.getElementById("demo1").style.color = "red";
+    document.getElementById("demo").style.color = "blue";
+}
+    </script>
+</body>
+</html>
